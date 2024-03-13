@@ -32,7 +32,7 @@ public class DetailsActivityUITest {
         Espresso.onView(ViewMatchers.withId(R.id.recycler_main))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(0, ViewActions.click()));
 
-        // Проверяем, что текстовое поле с автором отображается
+        // Проверка, что поля отображаются
         Espresso.onView(ViewMatchers.withId(R.id.text_detail_author))
                 .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
         Espresso.onView(ViewMatchers.withId(R.id.text_detail_detail))
